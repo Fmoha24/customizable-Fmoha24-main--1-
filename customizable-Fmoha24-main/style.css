@@ -1,4 +1,4 @@
-html, body {
+ body {
   display: grid;
   justify-content: center;
   align-content: center;
@@ -26,4 +26,3 @@ h1 {
   color: antiquewhite;
   background-color: salmon;
 }
-
