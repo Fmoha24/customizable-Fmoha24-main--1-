@@ -19,10 +19,18 @@ function setTheme(theme) {
   document.body.style.color = "";
   document.body.classList.remove("light", "dark", "salmon");
 
-  if (theme === "light" || theme === "dark" || theme === "salmon") {
+  const validThemes = ["light", "dark", "salmon"];
+  if (validThemes.includes(theme)) {
     document.body.classList.add(theme);
     return `Theme has been set to: "${theme}"`;
   } else {
     return `Theme "${theme}" is not valid. Please use "light", "dark", or "salmon".`;
   }
 }
+
+// Make the functions accessible from the console
+window.setTitle = setTitle;
+window.setBackgroundColor = setBackgroundColor;
+window.setFontColor = setFontColor;
+window.setTheme = setTheme;
+
